@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Present",
+    title: "Mobile Developer",
+    company: "Suga Group",
+    description:
+      "Repponsible for developing and maintaining Santa Food service. A Mini Web Apps  by FLutter and a part of Santa Pocket. A application that with with many services like Santa Food, Eshop, Market, Santa Wallet, etc.",
+  },
+  {
+    date: "December 2024 - March 2025",
+    title: "Mobile Developer",
+    company: "VivuShip",
+    description:
+      "Responsible for developing VivuShip food delivery platform with real-time order tracking and delivery management. Built 3 interconnected Flutter applications: VivuShip Food (customer ordering app), Food Merchant (restaurant management system), and Delivery (shipper tracking app). Implemented real-time communication between all platforms for seamless order processing, live delivery tracking, and instant notifications across the entire delivery ecosystem.",
+    image: "/vivuship_logo.svg",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
